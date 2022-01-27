@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習一 鍵盤控制聲音表現</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://picsum.photos/1000/600?blur=2?random=10);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .wrapbox {
+            width: 70%;;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        .wrapbox div {
+            text-align: center;
+            background-color: rgb(24, 27, 31);
+            border: 10px solid rgb(69, 105, 141);
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            padding: 1em;
+        }
+        .wrapbox div kbd {
+            font-size: 3em;
+            color: rgb(238, 192, 65);
+        } 
+        .wrapbox div span {
+            color:rgb(212, 217, 221);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapbox">
+        <div>
+            <kbd>A</kbd>
+            <span>請按我</span>
+        </div>
+        <div>
+            <kbd>S</kbd>
+            <span>請按我</span>
+        </div>
+        <div>
+            <kbd>D</kbd>
+            <span>請按我</span>
+        </div>
+        <div>
+            <kbd>F</kbd>
+            <span>請按我</span>
+        </div>
+        <div>
+            <kbd>G</kbd>
+            <span>請按我</span>
+        </div>
+        <div>
+            <kbd>H</kbd>
+            <span>請按我</span>
+        </div>
+        <div>
+            <kbd>J</kbd>
+            <span>請按我</span>
+        </div>
+        <div>
+            <kbd>K</kbd>
+            <span>請按我</span>
+        </div>
+        <div>
+            <kbd>L</kbd>
+            <span>請按我</span>
+        </div>
+    </div>
+    <audio src=""></audio>
+    <audio src=""></audio>
+    <audio src=""></audio>
+    <audio src=""></audio>
+    <audio src=""></audio>
+    <audio src=""></audio>
+    <audio src=""></audio>
+    <audio src=""></audio>
+    <audio src=""></audio>
+
+<script>
+    document.onkeydown = function (e) {
+        console.log(e.keyCode);
+    }
+</script>
+</body>
+</html>
